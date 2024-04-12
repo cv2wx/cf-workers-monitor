@@ -1,5 +1,5 @@
 settings:
-  title: 'Status Page'
+  title: 'Chingjyu: Status Page'
   url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -15,25 +15,25 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: Chingjyu Homepage # unique identifier
+    name: Chingjyu.cyou
+    url: 'https://chingjyu.cyou/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    linkable: true # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
+  - id: Chingjyu Cloud
+    name: Chingjyu Cloud
     description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+    url: 'https://cloud.chingjyu.cyou/'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
+  - id: Chingjyu Blog
     name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+    url: 'https://blog.chingjyu.cyou/'
     method: GET
     expectStatus: 200
+    linkable: true 
