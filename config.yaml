@@ -25,14 +25,13 @@ monitors:
 
   - id: Chingjyu Cloud
     name: Chingjyu Cloud
-    description: 'Built for anything connected to the Internet.'
     url: 'https://cloud.chingjyu.cyou/'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
   - id: Chingjyu Blog
-    name: The Cloudflare Blog
+    name: Chingjyu Blog
     url: 'https://blog.chingjyu.cyou/'
     method: GET
     expectStatus: 200
