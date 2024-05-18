@@ -15,7 +15,7 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: Chingjyu Homepage # unique identifier
+  - id: Chingjyu Homepage & Blog # unique identifier
     name: Chingjyu.cyou
     url: 'https://chingjyu.cyou/' # URL to fetch
     method: GET # default=GET
@@ -29,10 +29,3 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
-
-  - id: Chingjyu Blog
-    name: Chingjyu Blog
-    url: 'https://blog.chingjyu.cyou/'
-    method: GET
-    expectStatus: 200
-    linkable: true 
